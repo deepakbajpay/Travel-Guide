@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="cast_notification_id" />
+    <item type="id" name="RelativeLayout1">false</item>
+    <item type="id" name="scrollView1">false</item>
+    <item type="id" name="imageView1">false</item>
+    <item type="id" name="textView1">false</item>
+    <item type="id" name="textView2">false</item>
+    <item type="id" name="textView3">false</item>
+    <item type="id" name="textView4">false</item>
+    <item type="id" name="textView5">false</item>
+    <item type="id" name="textView6">false</item>
+    <item type="id" name="adView">false</item>
+    <item type="id" name="wv_place_details">false</item>
+    <item type="id" name="LinearLayout1">false</item>
+    <item type="id" name="tn1">false</item>
+    <item type="id" name="progressBar1">false</item>
+    <item type="id" name="tv1">false</item>
+    <item type="id" name="gv1">false</item>
+    <item type="id" name="map1">false</item>
+    <item type="id" name="u1">false</item>
+    <item type="id" name="u2">false</item>
+    <item type="id" name="action_settings">false</item>
+    <item type="id" name="use">false</item>
+    <item type="id" name="logout">false</item>
+</resources>

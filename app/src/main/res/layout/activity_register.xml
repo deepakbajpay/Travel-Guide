@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background2"
+    tools:context="com.app.assist.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/register_name_et"
+            style="@style/sign_up_et"
+            android:drawableLeft="@drawable/ic_login_username"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:drawableStart="@drawable/ic_login_username"
+            android:hint="Name"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/regisiter_email_et"
+            style="@style/sign_up_et"
+            android:layout_below="@+id/register_name_et"
+            android:drawableLeft="@drawable/ic_login_email"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:drawableStart="@drawable/ic_login_email"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/register_password_et"
+            style="@style/sign_up_et"
+            android:layout_below="@+id/regisiter_email_et"
+            android:drawableLeft="@drawable/ic_login_password"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:drawableStart="@drawable/ic_login_password"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+
+        <EditText
+            android:id="@+id/register_password_reenter_et"
+            style="@style/sign_up_et"
+            android:layout_below="@+id/register_password_et"
+            android:drawableLeft="@drawable/ic_login_password"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:drawableStart="@drawable/ic_login_password"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/register_password_reenter_et"
+            android:background="@drawable/selector_sign_in_button"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avl_indicator_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/login_password_et"
+            android:visibility="gone"
+            app:indicatorColor="@color/primary_color"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

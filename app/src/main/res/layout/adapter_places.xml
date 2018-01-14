@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_8dp"
+    android:layout_marginRight="@dimen/dimen_8dp"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    android:background="@android:color/white"
+    android:elevation="@dimen/dimen_8dp"
+    android:paddingBottom="@dimen/dimen_8dp"
+    android:paddingLeft="@dimen/dimen_16dp"
+    android:paddingRight="@dimen/dimen_16dp"
+    android:paddingTop="@dimen/dimen_8dp">
+
+    <ImageView
+        android:id="@+id/place_thumbnail_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bank" />
+
+    <TextView
+        android:id="@+id/place_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_toEndOf="@+id/place_thumbnail_iv"
+        android:layout_toRightOf="@+id/place_thumbnail_iv"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="6dp"
+        android:text="place name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/place_address_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place_name_tv"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_toEndOf="@+id/place_thumbnail_iv"
+        android:layout_toRightOf="@+id/place_thumbnail_iv"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingBottom="4dp"
+        android:text="address of the place selected"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/iv_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/place_address_tv"
+        android:background="@color/green"
+        android:clickable="true"
+
+        android:text="Verify"
+        android:textColor="@color/white" />
+</RelativeLayout>
